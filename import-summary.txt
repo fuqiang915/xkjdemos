@@ -1,0 +1,84 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/encodings.xml
+* .idea/findbugs-idea.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/scopes/
+* .idea/scopes/scope_settings.xml
+* .idea/uiDesigner.xml
+* .idea/vcs.xml
+* .idea/workspace.xml
+* XKJDemos.iml
+* ic_launcher-web.png
+* out/
+* out/production/
+* out/production/CardViewLib/
+* out/production/CardViewLib/android/
+* out/production/CardViewLib/android/support/
+* out/production/CardViewLib/android/support/v7/
+* out/production/CardViewLib/android/support/v7/cardview/
+* out/production/CardViewLib/android/support/v7/cardview/BuildConfig.class
+* out/production/CardViewLib/android/support/v7/cardview/R$attr.class
+* out/production/CardViewLib/android/support/v7/cardview/R$color.class
+* out/production/CardViewLib/android/support/v7/cardview/R$dimen.class
+* out/production/CardViewLib/android/support/v7/cardview/R$drawable.class
+* out/production/CardViewLib/android/support/v7/cardview/R$layout.class
+* out/production/CardViewLib/android/support/v7/cardview/R$string.class
+* out/production/CardViewLib/android/support/v7/cardview/R$style.class
+* out/production/CardViewLib/android/support/v7/cardview/R$styleable.class
+* out/production/CardViewLib/android/support/v7/cardview/R.class
+* out/production/XKJDemosTest/
+* out/production/XKJDemosTest/XKJDemosTest.apk
+* out/production/XKJDemosTest/com/
+* out/production/XKJDemosTest/com/xkj/
+* out/production/XKJDemosTest/com/xkj/xkjdemos/
+* out/production/XKJDemosTest/com/xkj/xkjdemos/MainActivityTest.class
+* out/production/XKJDemosTest/com/xkj/xkjdemos/VersionTest.class
+* out/production/XKJDemosTest/com/xkj/xkjdemos/WebViewBridgeTest.class
+* out/production/XKJDemosTest/com/xkj/xkjdemos/tests/
+* out/production/XKJDemosTest/com/xkj/xkjdemos/tests/BuildConfig.class
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* libs/AMap_3DMap_V2.2.1.jar => app/libs/AMap_3DMap_V2.2.1.jar
+* libs/afinal_0.5.1_bin.jar => app/libs/afinal_0.5.1_bin.jar
+* libs/android-support-v7-recyclerview.jar => app/libs/android-support-v7-recyclerview.jar
+* libs/ihaveu_util_library.jar => app/libs/ihaveu_util_library.jar
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* Test/res/ => app/src/androidTest/res
+* Test/src/ => app/src/androidTest/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

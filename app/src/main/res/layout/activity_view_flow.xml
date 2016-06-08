@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent" android:orientation="vertical" android:weightSum="1">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <!--<com.xkj.ui.CircleFlowIndicator-->
+                <!--android:id="@+id/view_flow_indicator"-->
+                <!--android:layout_width="match_parent" android:layout_height="40dp"/>-->
+
+        <com.xkj.ui.XViewFlowSlidingTabStrip
+                android:id="@+id/pager_tab"
+                android:layout_width="match_parent"
+                                         android:layout_height="50dp"></com.xkj.ui.XViewFlowSlidingTabStrip>
+        <com.xkj.ui.XViewFlow
+                android:id="@+id/view_flow"
+                android:layout_below="@id/pager_tab"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                >
+        </com.xkj.ui.XViewFlow>
+    </RelativeLayout>
+</ScrollView>

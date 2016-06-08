@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.xkj.ui.OverlappingPaneLayout
+            android:id="@+id/overlappingPaneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <View android:layout_width="match_parent" android:layout_height="100dp"
+              android:background="@android:color/darker_gray"
+                />
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:id="@+id/scroll_view"
+                    android:background="#f00"
+                >
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                    >
+                <TextView
+                        android:id="@+id/title_view"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="测试问题asldfaj;dlfja;dsfj;alsjd;fja;sdf"
+                        />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="测试问题asldfaj;dlfja;dsfj;alsjd;fja;sdf"
+                        />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="测试问题asldfaj;dlfja;dsfj;alsjd;fja;sdf"
+                        />
+                <View android:layout_width="match_parent" android:layout_height="1200dp" android:background="#22f"></View>
+            </LinearLayout>
+        </ScrollView>
+        <ListView android:id="@+id/list_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        </ListView>
+
+
+    </com.xkj.ui.OverlappingPaneLayout>
+</RelativeLayout>

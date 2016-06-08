@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <com.xkj.demos.android.widgets.MultiScrollView android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:background="#eee"
+                >
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="sdfssdfsdf\nsdfsdfsdf\nsdfsdfsdf\nsdfsdfsdf"
+                    />
+            <com.xkj.demos.android.widgets.InnerListView android:id="@+id/child_list" android:layout_width="match_parent"
+                      android:layout_height="600dp"
+                      android:tag="scroll"
+                      android:background="@android:color/darker_gray"
+                    />
+        </LinearLayout>
+    </com.xkj.demos.android.widgets.MultiScrollView>
+
+</RelativeLayout>

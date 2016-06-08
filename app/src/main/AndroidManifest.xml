@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xkj.xkjdemos"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/u"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xkj.fulldemos.listviewremovalanimation.ListViewRemovalAnimation"
+            android:label="@string/app_name"
+            android:theme="@style/WithoutBackground" />
+        <activity
+            android:name="com.xkj.demos.pages.ActionbarTabActivity"
+            android:label="@string/title_activity_actionbar_tab" />
+        <activity
+            android:name="com.xkj.demos.pages.FragmentActResultDemo"
+            android:label="FragmentActResultDemo" />
+        <activity
+            android:name="com.xkj.demos.pages.ResultTargetActivity"
+            android:label="ResultTargetActivity" />
+        <activity
+            android:name="com.xkj.demos.pages.AMapGeoTest"
+            android:label="AMapGeoTest" />
+        <activity
+            android:name="com.xkj.demos.pages.CustomViewDemo"
+            android:label="activity_custom_view_demo"
+            android:launchMode="singleInstance"
+            android:theme="@style/WithoutAnimation" />
+        <activity
+            android:name="com.xkj.demos.android.widgets.ListViewArrayAdapterActivity"
+            android:label="list_view_demos" />
+        <activity
+            android:name="com.xkj.demos.android.widgets.ListViewSimpleAdapterActivity"
+            android:label="list_view_simple_adapter_activity" />
+        <activity
+            android:name="com.xkj.demos.pages.SSHActivity"
+            android:label="ssh_activity" />
+        <activity
+            android:name="com.xkj.demos.mvp.MVPSampleActivity"
+            android:label="mvp_sample_activity" />
+        <activity
+            android:name="com.xkj.demos.pages.ProgressBarActivity"
+            android:label="activity_progress_bar_demo" />
+        <activity
+            android:name="com.xkj.demos.design.pattern.DesignPatternActivity"
+            android:label="design_pattern" />
+        <activity
+            android:name="com.xkj.demos.android.widgets.MultiScrollViewDemoActivity"
+            android:label="multi_scroll_view_demo" />
+        <activity
+            android:name="com.xkj.demos.android.widgets.HomeActivityDemo"
+            android:label="home_activity_demo" />
+        <activity
+            android:name="com.xkj.demos.pages.WebpDemoActivity"
+            android:label="webp_demo_activity" />
+        <activity
+            android:name="com.xkj.demos.pages.ViewFLowDemo"
+            android:label="view_flow_demo" />
+        <activity
+            android:name="com.xkj.demos.pages.PagingListDemo"
+            android:label="paging_list_demo" />
+        <activity
+            android:name="com.xkj.demos.pages.DownloadFileDemo"
+            android:label="download_file" />
+        <activity
+            android:name="com.xkj.demos.pages.FragmentDemo"
+            android:label="fragment_demo" />
+        <activity
+            android:name="com.xkj.demos.pages.OverlappingPaneLayoutDemo"
+            android:label="OverlappingPaneLayout" />
+        <activity
+            android:name="com.xkj.demos.pages.WebViewDemo"
+            android:label="web_view_demo" />
+        <activity
+            android:name="com.xkj.demos.pages.NestedScrollViewDemo"
+            android:label="nested_scrollview_demo" />
+        <activity
+            android:name="com.xkj.demos.pages.MockTestDemo"
+            android:label="mock_test_demo" />
+        <activity
+            android:name="com.xkj.demos.pages.HandlerDemo"
+            android:label="HanlderDemo" />
+        <activity
+            android:name="com.xkj.demos.pages.ContactDemo"
+            android:label="contact_demo" />
+        <activity
+            android:name="com.xkj.demos.pages.RecycleViewDemo"
+            android:label="recycleviewDemo" />
+        <activity
+            android:name="com.xkj.demos.pages.JsonDemo"
+            android:label="jsonDemo" />
+        <activity
+            android:name="com.xkj.demos.pages.MetralSupportTabs"
+            android:label="Metral Tab" />
+        <activity
+            android:name="com.xkj.demos.pages.SQLiteHelperDemo"
+            android:label="@string/title_activity_sqlite_helper_demo" />
+        <activity
+            android:name="com.xkj.demos.pages.ThreadLocalActivity"
+            android:label="@string/title_activity_thread_local" />
+        <activity
+            android:name="com.xkj.demos.pages.IPCMessengerActivity"
+            android:label="@string/title_activity_ipcmessenger" />
+
+        <service
+            android:name="com.xkj.demos.services.MessengerService"
+            android:process=":test" />
+        <service
+            android:name="com.xkj.demos.services.BookManagerService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" />
+
+        <activity
+            android:name="com.xkj.demos.pages.IPCBinderActivity"
+            android:label="@string/title_activity_ipcbinder" />
+        <activity
+            android:name="com.xkj.demos.pages.EventActivity"
+            android:label="@string/title_activity_event" />
+        <activity
+            android:name="com.xkj.demos.pages.MyThreadActivity"
+            android:label="@string/title_activity_my_thread" />
+        <activity
+            android:name="com.xkj.demos.pages.CommonTestActivity"
+            android:label="@string/title_activity_common_test" />
+        <activity android:name="com.xkj.demos.pages.ThreadPoolDemoActivity" />
+        <activity
+            android:name="com.xkj.demos.pages.LRUCacheActivity"
+            android:label="@string/title_activity_lrucache" />
+        <activity
+            android:name="com.xkj.demos.pages.HandlerThreadActivity"
+            android:label="@string/title_activity_handler_thread" />
+
+        <service
+            android:name="com.xkj.demos.services.ImageDownloaderService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.xkj.demos.pages.ImageDownloadActivity"
+            android:label="@string/title_activity_image_download" />
+
+        <service
+            android:name="com.xkj.demos.services.ImageDownloaderIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.xkj.demos.pages.ContentProviderActivity"
+            android:label="@string/title_activity_content_provider" />
+
+        <provider
+            android:name="com.xkj.demos.contentprovider.MyContentProvider"
+            android:authorities="com.xkj.chen"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.xkj.demos.pages.BaseActivity" />
+        <activity
+            android:name="com.xkj.demos.pages.EventBusActivity"
+            android:label="@string/title_activity_event_bus" />
+        <activity
+            android:name="com.xkj.demos.pages.CubeDemoActivity"
+            android:label="@string/title_activity_cube_demo" />
+        <activity
+            android:name="com.xkj.demos.pages.OverDrawDemoActivity"
+            android:label="@string/title_activity_over_draw_demo" />
+        <activity
+            android:name="com.xkj.demos.pages.IAnimationsActivity"
+            android:label="@string/title_activity_ianimations" />
+        <activity
+            android:name="com.xkj.demos.pages.IShakeAnimActivity"
+            android:label="@string/title_activity_ishake_anim" />
+        <activity
+            android:name="com.xkj.demos.pages.WaterRippleActivity"
+            android:label="@string/title_activity_water_ripple" />
+        <activity android:name="com.xkj.demos.pages.DialogDemoActivity" />
+        <activity android:name="com.xkj.demos.pages.ImageLoaderActivity"></activity>
+    </application>
+
+</manifest>
